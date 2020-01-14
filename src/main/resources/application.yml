@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    mysqldb:
+      url: jdbc:mysql://localhost:3306/mysqldb
+      username: root
+      password: password
+    psqldb:
+      url: jdbc:postgresql://localhost:5432/psqldb
+      username: postgres
+      password: 
+    mongodb:
+      uri: mongodb://localhost:27017/mongodb
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true

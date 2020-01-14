@@ -1,0 +1,111 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------------< api:DA >-------------------------------
+[INFO] Building DA 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ DA ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ DA ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /Users/gyougi.rin/work/workspace/DA/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ DA ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/gyougi.rin/work/workspace/DA/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ DA ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/gyougi.rin/work/workspace/DA/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ DA ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.line.delivey.DaApplicationTests
+2020-01-10 18:14:30.925  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.line.delivey.DaApplicationTests], using SpringBootContextLoader
+2020-01-10 18:14:30.934  INFO   --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.line.delivey.DaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-10 18:14:30.935  INFO   --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.line.delivey.DaApplicationTests]: DaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-10 18:14:31.034  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.line.delivey.DaApplication for test class com.line.delivey.DaApplicationTests
+2020-01-10 18:14:31.123  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-01-10 18:14:31.140  INFO   --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56f0cc85, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62e20a76, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2cc44ad, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@44b3606b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1477089c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@663411de, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@63dd899, org.springframework.test.context.event.EventPublishingTestExecutionListener@59d2400d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75cd8043, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@33b1c5c5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b202a3a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@10b9db7b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@9ef8eb7]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v2.2.3.BUILD-SNAPSHOT)
+
+2020-01-10 18:14:36.439  INFO 20477 --- [           main] com.line.delivey.DaApplicationTests      : Starting DaApplicationTests on gyougirins-MacBook-Pro.local with PID 20477 (started by gyougi.rin in /Users/gyougi.rin/work/workspace/DA)
+2020-01-10 18:14:36.440  INFO 20477 --- [           main] com.line.delivey.DaApplicationTests      : No active profile set, falling back to default profiles: default
+2020-01-10 18:14:37.134  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 18:14:37.135  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-01-10 18:14:37.173  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 1 MongoDB repository interfaces.
+2020-01-10 18:14:37.177  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 18:14:37.177  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-10 18:14:37.186  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
+2020-01-10 18:14:37.187  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-10 18:14:37.187  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-10 18:14:37.194  INFO 20477 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 1 JPA repository interfaces.
+2020-01-10 18:14:37.807  INFO 20477 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 18:14:38.166  INFO 20477 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: mysql]
+2020-01-10 18:14:38.234  INFO 20477 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-10 18:14:38.382  INFO 20477 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-10 18:14:38.539  INFO 20477 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-10 18:14:38.949  INFO 20477 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-10 18:14:38.968  INFO 20477 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-01-10 18:14:39.553  INFO 20477 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-10 18:14:39.561  INFO 20477 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'mysql'
+2020-01-10 18:14:39.592  INFO 20477 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: psql]
+2020-01-10 18:14:39.598  INFO 20477 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-01-10 18:14:39.666  INFO 20477 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-01-10 18:14:39.670  INFO 20477 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-01-10 18:14:39.806  INFO 20477 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-10 18:14:39.806  INFO 20477 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'psql'
+2020-01-10 18:14:40.143  INFO 20477 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-01-10 18:14:40.191  INFO 20477 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:43}] to localhost:27017
+2020-01-10 18:14:40.201  INFO 20477 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 2]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2583824}
+2020-01-10 18:14:40.734  WARN 20477 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-10 18:14:41.015  INFO 20477 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-10 18:14:41.327  INFO 20477 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 18:14:41.375  INFO 20477 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-10 18:14:41.845  INFO 20477 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-10 18:14:41.869  INFO 20477 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-10 18:14:41.901  INFO 20477 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-10 18:14:41.957  INFO 20477 --- [           main] com.line.delivey.DaApplicationTests      : Started DaApplicationTests in 10.779 seconds (JVM running for 11.851)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.457 s - in com.line.delivey.DaApplicationTests
+2020-01-10 18:14:42.184  INFO 20477 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-10 18:14:42.189  INFO 20477 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'psql'
+2020-01-10 18:14:42.190  INFO 20477 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-01-10 18:14:42.198  INFO 20477 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-01-10 18:14:42.198  INFO 20477 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'mysql'
+2020-01-10 18:14:42.198  INFO 20477 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-10 18:14:42.212  INFO 20477 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.3:war (default-war) @ DA ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [DA] in [/Users/gyougi.rin/work/workspace/DA/target/DA-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/Users/gyougi.rin/work/workspace/DA/src/main/webapp]
+[INFO] Webapp assembled in [253 msecs]
+[INFO] Building war: /Users/gyougi.rin/work/workspace/DA/target/DA-0.0.1-SNAPSHOT.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.3.BUILD-SNAPSHOT:repackage (repackage) @ DA ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.361 s
+[INFO] Finished at: 2020-01-10T18:14:45+09:00
+[INFO] ------------------------------------------------------------------------
