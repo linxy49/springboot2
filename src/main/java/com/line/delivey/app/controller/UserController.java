@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.line.delivey.common.LogUtils;
-import com.line.delivey.domain.service.EmailService;
+import com.line.delivey.domain.service.MailService;
 import com.line.delivey.domain.service.TaskService;
 import com.line.delivey.domain.service.UserService;
 import com.line.delivey.infrastructure.mongodb.entity.Task;
 import com.line.delivey.infrastructure.mysqldb.entity.User;
-import com.line.delivey.infrastructure.psqldb.entity.Email;
+import com.line.delivey.infrastructure.psqldb.entity.Mail;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/v1/users")
 public class UserController {
 
   @Autowired
@@ -30,7 +30,7 @@ public class UserController {
   public TaskService taskService;
 
   @Autowired
-  public EmailService emailService;
+  public MailService mailService;
 
   /**
    * user list.
@@ -38,17 +38,13 @@ public class UserController {
    */
   @GetMapping
   public String index() {
-    LogUtils.info("================================INDEX BEGIN================================");
-    taskService.save();
-
+    LogUtils.info("===========INDEX BEGIN===========");
     List<User> users = userService.all();
-    List<Email> emails = emailService.all();
     List<Task> tasks = taskService.all();
+    List<Mail> mails = mailService.all();
+    LogUtils.info("===========INDEX END  ===========");
 
-    String user = users.get(0).getName();
-    String email = emails.get(0).getName();
-    LogUtils.info("================================INDEX END  ================================");
-    return "ユーザー：" + user + "<br>" +  "メール：" + email;
+    return "ユーザー：" + users.size() + "<br>" + "タスク：" + tasks.size() + "<br>" + "メール：" + mails.size();
   }
 
   @GetMapping("{id}")

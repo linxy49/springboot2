@@ -19,7 +19,7 @@
 			<maxHistory>5</maxHistory>
 		</rollingPolicy>
 	</appender>
-	<root level="INFO">
+	<root level="DEBUG">
 		<appender-ref ref="CONSOLE" />
 		<appender-ref ref="FILE" />
 	</root>

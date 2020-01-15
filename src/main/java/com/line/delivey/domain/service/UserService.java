@@ -10,6 +10,7 @@ import com.line.delivey.infrastructure.mysqldb.repository.UserRepository;
 
 @Service
 public class UserService {
+
   @Autowired
   UserRepository repository;
 
